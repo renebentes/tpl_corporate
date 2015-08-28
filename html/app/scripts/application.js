@@ -1,6 +1,6 @@
 /*!
- * Turquoise Template: turquoise.js v0.2.0
- * http://github.com/renebentes/turquoise
+ * Corporate Template: corporate.js v0.2.0
+ * http://github.com/renebentes/corporate
  *
  * Author: Rene Bentes Pinto <renebentes@yahoo.com.br>
  * Link: http://renebentes.github.io
@@ -20,18 +20,18 @@ if (typeof jQuery === 'undefined') {
 
   // Call Button & Input Tooltip
   $('.extra-tooltip').tooltip({
-    container: "body"
+    container: 'body'
   })
 
   // Call popover
   $('.hasPopover').popover({
-    trigger: "hover",
+    trigger: 'hover',
     html: true
   })
 
   // Call Button & Input Popover
   $('.extra-popover').popover({
-    container: "body"
+    container: 'body'
   })
 
   // Call Modal Ever
@@ -63,7 +63,7 @@ if (typeof jQuery === 'undefined') {
 
   // Scroll top
   $(window).scroll(function () {
-    if ($(this).scrollTop() != 0) {
+    if ($(this).scrollTop() !== 0) {
       $('.scroll-top').fadeIn()
     }
     else {

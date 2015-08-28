@@ -1,8 +1,10 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title>Tema Turquesa</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Tema Corporativo</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,18 +18,31 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/bootstrap.css">
-    <link rel="stylesheet" href="styles/fontawesome.css">
-    <link rel="stylesheet" href="styles/turquoise.css">
+    <link rel="stylesheet" href="styles/font-awesome.css">
+    <link rel="stylesheet" href="styles/template.css">
     <!-- endbuild -->
+
+    <!-- <style type="text/css">
+      .wrap-header:before {
+        background-image: url("images/headers/header01.jpg") !important;
+      }
+    </style> -->
   </head>
   <body class="front" role="document">
     <!--[if lt IE 10]>
-      <p class="browsehappy">Você está usando um navegador <strong>desatualizado</strong>. Por favor, <a href="_QQ_"http://browsehappy.com/"_QQ_">atualize seu navegador</a> para melhorar sua experiência e proteger seu computador.</p>
+      <div class="alert alert-warning" role="alert">
+        Você está usando um navegador <strong>desatualizado</strong>. Por favor, <a href="_QQ_"http://browsehappy.com/"_QQ_">atualize seu navegador</a> para melhorar sua experiência e proteger seu computador.
+      </div>
     <![endif]-->
     <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
     <header class="wrap-header">
       <nav class="navbar navbar-dark navbar-sm" role="navigation">
         <div class="container">
+          <div class="navbar-header">
+            <a href="index.html" class="navbar-brand">
+              Corporativo
+            </a>
+          </div>
           <ul class="nav navbar-nav">
             <li>
               <a href="sitemap.html">Mapa do Site</a>
@@ -42,7 +57,8 @@
             <li class="dropdown">
               <a  href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <span class="fa fa-user"></span>
-                Entrar <span class="caret"></span>
+                Entrar
+                <span class="caret"></span>
               </a>
               <ul class="dropdown-menu" role="menu">
                 <li>
@@ -51,12 +67,12 @@
                       <label for="modlgn-username" class="sr-only">Nome de Usuário</label>
                       <div class="input-group">
                         <span class="input-group-addon">
-                          <i class="fa fa-user hasTooltip" title="Nome de Usuário"></i>
+                          <span class="fa fa-user hasTooltip" title="Nome de Usuário"></span>
                         </span>
                         <input id="modlgn-username" type="text" name="username" class="form-control" size="18" placeholder="Nome de Usuário" />
                         <span class="input-group-btn extra-tooltip" title="Esqueceu seu usuário?">
                           <a class="btn btn-default" href="reset.html">
-                            <i class="fa fa-question"></i>
+                            <span class="fa fa-question"></span>
                           </a>
                         </span>
                       </div>
@@ -65,12 +81,12 @@
                       <label for="modlgn-passwd" class="sr-only">Senha</label>
                       <div class="input-group">
                         <span class="input-group-addon">
-                          <i class="fa fa-lock hasTooltip" title="Senha"></i>
+                          <span class="fa fa-lock hasTooltip" title="Senha"></span>
                         </span>
                         <input id="modlgn-passwd" type="password" name="password" class="form-control" size="18"  placeholder="Senha" />
                         <span class="input-group-btn extra-tooltip" title="Esqueceu sua senha?">
                           <a class="btn btn-default" href="remind.html">
-                            <i class="fa fa-question"></i>
+                            <span class="fa fa-question"></span>
                           </a>
                         </span>
                       </div>
@@ -82,7 +98,7 @@
                       </label>
                     </div>
                     <button type="submit" name="submit" class="btn btn-primary pull-right">
-                      <i class="fa fa-log-in"></i>Entrar
+                      <span class="fa fa-log-in"></span>Entrar
                     </button>
                   </form>
                 </li>
@@ -104,31 +120,46 @@
         </div>
       </nav>
       <div class="header container">
-        <div class="row">
-          <div class="col-md-2 hidden-xs">
-            <a class="hasTooltip" href="index.html" title="Tema Turquesa" data-placement="bottom">
-              <img class="img-responsive" src="images/logo.png" alt="Tema Turquesa" />
-            </a>
-          </div>
-          <div class="col-md-7">
-            <h1>Turquesa</h1>
-            <p class="lead">Um simples tema responsivo para sites.</p>
-          </div>
-        </div>
+        <a class="logo hasTooltip pull-left" href="index.html" title="Tema Corporativo">
+          <img class="img-responsive" src="images/logos/logo-solid-inverted.svg" alt="Tema Corporativo" />
+        </a>
+        <h1>Corporativo</h1>
+        <p class="lead">Um simples tema responsivo para sites.</p>
       </div>
     </header>
-    <nav class="navbar navbar-turquoise" role="navigation">
-        <div class="container">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <nav class="navbar navbar-corporate" role="navigation">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Institucional
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="noticias.html">Notícias</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <main id="content" class="container" tabindex="-1">
+      <ul class="breadcrumb">
+        <li>
+          <span class="fa fa-map-marker hasTooltip" title="Você está aqui"></span>
+        </li>
+        <li>Home</li>
+      </ul>
       <div class="row">
-        <div class="col-md-12 col-xs-12">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-9">
           <div id="carousel-featured" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carousel-featured" data-slide-to="0" class=""></li>
@@ -137,13 +168,25 @@
             </ol>
             <div class="carousel-inner" role="listbox">
               <div class="item active">
-                <img data-src="holder.js/900x500?random=yes&amp;text=Primeiro slide" alt="Primeiro slide [900x500]">
+                <img data-src="holder.js/1200x350?random=yes&amp;text=Primeiro slide" alt="Primeiro slide [1200x350]">
+                <div class="carousel-caption">
+                  <h3>Lorem ipsum</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna iq...</p>
+                </div>
               </div>
               <div class="item">
-                <img data-src="holder.js/900x500?random=yes&amp;text=Segundo slide" alt="Segundo slide [900x500]">
+                <img data-src="holder.js/1200x350?random=yes&amp;text=Segundo slide" alt="Segundo slide [1200x350]">
+                <div class="carousel-caption">
+                  <h3>Lorem ipsum</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna iq...</p>
+                </div>
               </div>
               <div class="item">
-                <img data-src="holder.js/900x500?random=yes&amp;text=Terceiro slide" alt="Terceiro slide [900x500]">
+                <img data-src="holder.js/1200x350?random=yes&amp;text=Terceiro slide" alt="Terceiro slide [1200x350]">
+                <div class="carousel-caption">
+                  <h3>Lorem ipsum</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna iq...</p>
+                </div>
               </div>
             </div>
             <a class="left carousel-control" href="#carousel-featured" role="button" data-slide="prev">
@@ -155,133 +198,39 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
           <div class="row">
-            <div class="col-md-12">
-              <section class="blog-featured" itemscope="" itemtype="http://schema.org/Blog">
-                <div class="row">
-                  <div class="col-md-12" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
-                    <article>
-                      <header class="page-header">
-                        <h2 itemprop="name">
-                          <a href="article.html" itemprop="url">Lorem ipsum</a>
-                        </h2>
-                      </header>
-                      <aside class="clearfix">
-                        <div class="btn-group pull-right">
-                          <a href="print.html?print=1" aria-label="Imprimir" class="btn btn-default btn-xs extra-tooltip modal-remote" role="button" data-target="#popupModal" title="Imprimir">
-                            <span class="glyphicon glyphicon-print" aria-hidden="true"></span>
-                          </a>
-                          <a href="mailto.html" aria-label="Email" class="btn btn-default btn-xs extra-tooltip modal-remote" role="button" data-target="#popupModal" title="Envie este link a um amigo.">
-                            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                          </a>
-                        </div>
-                        <dl class="article-details text-muted pull-left">
-                          <dd class="extra-tooltip" title="Data de Publicação">
-                            <span class="fa fa-calendar"></span>
-                            <time datetime="2012-07-06T14:29:37-03:00" itemprop="datePublished">06 Julho 2012</time>
-                          </dd>
-                        </dl>
-                      </aside>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      <img class="img-responsive hasTootip" data-src="holder.js/300x200" title="300x200" alt="300x200">
-                      <p class="readmore">
-                        <a class="pull-left" href="article.html" itemprop="url">
-                          <span class="fa fa-share"></span>
-                          Leia mais...
-                        </a>
-                      </p>
-                    </article>
-                  </div>
-                </div>
-                <hr class="half-rule">
-                <div class="row">
-                  <div class="col-md-12" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
-                    <article>
-                      <header class="page-header">
-                        <h2 itemprop="name">
-                          <a href="article.html" itemprop="url">Lorem ipsum</a>
-                        </h2>
-                      </header>
-                      <aside class="clearfix">
-                        <div class="btn-group pull-right">
-                          <a href="print.html?print=1" aria-label="Imprimir" class="btn btn-default btn-xs extra-tooltip modal-remote" role="button" data-target="#popupModal" title="Imprimir">
-                            <span class="glyphicon glyphicon-print" aria-hidden="true"></span>
-                          </a>
-                          <a href="mailto.html" aria-label="Email" class="btn btn-default btn-xs extra-tooltip modal-remote" role="button" data-target="#popupModal" title="Envie este link a um amigo.">
-                            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                          </a>
-                        </div>
-                        <dl class="article-details text-muted pull-left">
-                          <dd class="extra-tooltip" title="Data de Publicação">
-                            <span class="fa fa-calendar"></span>
-                            <time datetime="2012-07-06T14:29:37-03:00" itemprop="datePublished">06 Julho 2012</time>
-                          </dd>
-                        </dl>
-                      </aside>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      <img class="img-responsive hasTootip" data-src="holder.js/300x200" title="300x200" alt="300x200">
-                      <p class="readmore">
-                        <a class="pull-left" href="article.html" itemprop="url">
-                          <span class="fa fa-share"></span>
-                          Leia mais...
-                        </a>
-                      </p>
-                    </article>
-                  </div>
-                </div>
-                <hr class="half-rule">
-                <div class="row">
-                  <div class="col-md-12" itemprop="blogPost" itemscope="" itemtype="http://schema.org/BlogPosting">
-                    <article>
-                      <header class="page-header">
-                        <h2 itemprop="name">
-                          <a href="article.html" itemprop="url">Lore ipsum</a>
-                        </h2>
-                      </header>
-                      <aside class="clearfix">
-                        <div class="btn-group pull-right">
-                          <a href="print.html?print=1" aria-label="Imprimir" class="btn btn-default btn-xs extra-tooltip modal-remote" role="button" data-target="#popupModal" title="Imprimir">
-                            <span class="glyphicon glyphicon-print" aria-hidden="true"></span>
-                          </a>
-                          <a href="mailto.html" aria-label="Email" class="btn btn-default btn-xs extra-tooltip modal-remote" role="button" data-target="#popupModal" title="Envie este link a um amigo.">
-                            <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                          </a>
-                        </div>
-                        <dl class="article-details text-muted pull-left">
-                          <dd class="extra-tooltip" title="Data de Publicação">
-                            <span class="fa fa-calendar"></span>
-                            <time datetime="2012-07-06T14:29:37-03:00" itemprop="datePublished">06 Julho 2012</time>
-                          </dd>
-                        </dl>
-                      </aside>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      <img class="img-responsive hasTootip" data-src="holder.js/300x200" title="300x200" alt="300x200">
-                      <p class="readmore">
-                        <a class="pull-left" href="article.html" itemprop="url">
-                          <span class="fa fa-share"></span>
-                          Leia mais...
-                        </a>
-                      </p>
-                    </article>
-                  </div>
-                </div>
-                <hr class="half-rule">
-              </section>
+            <div class="col-md-9">
+
             </div>
           </div>
         </div>
       </div>
     </main>
     <footer class="wrap-footer">
+      <div class="container">
+        <div class="row">
+          <div class="custom col-md-5">
+            <div class="page-header">
+              <h4>Fale Conosco</h4>
+            </div>
+            <address>
+              <ul>
+                <li><strong>Tema Corporativo.</strong></li>
+                <li><span class="fa fa-map-marker fa-lg fa-fw"></span>Brasil</li>
+                <li><span class="fa fa-phone fa-lg fa-fw"></span>(xx) xxxxx-xxxx</li>
+                <li><span class="fa fa-envelope fa-lg fa-fw"></span>
+                  <a href="mailto:contato@x.xxx.xx">contato@x.xxx.xx</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
+      </div>
       <div class="footer-bottom">
         <div class="container">
           <div class="row">
-            <div class="footer col-md-6">
-              <p>© 2013 - 2015  <a href="http://localhost/intranet/"><strong>Intranet 8º BEC</strong></a>. Todos os direitos reservados. Seção de Informática 8º BEC.</p>
+            <div class="col-md-6 footer">
+              <p>© 2013 - 2015  <a href="index.html"><strong>Tema Corporativo</strong></a>. Todos os direitos reservados.</p>
             </div>
           </div>
         </div>
@@ -294,21 +243,26 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-            <h3 class="modal-title">Batalhão Rondon - 45 anos em Santarém</h3>
+            <h3 class="modal-title">Modal title</h3>
           </div>
           <div class="modal-body">
-            <p><img class="img-responsive center-block hasTootlip" title="Batalhão Rondon - 45 anos em Santarém" src="images/banners/outdoor.jpg" alt="Batalhão Rondon - 45 anos em Santarém" /></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <img class="img-responsive center-block hasTootlip" title="Lorem ipsum" data-src="holder.js/800x600?random=yes" alt="Lorem ipsum" />
           </div>
         </div>
       </div>
     </div>
-    <a href="#" class="btn btn-default scroll-top" role="button"><span class="glyphicon glyphicon-chevron-up"></span></a>
+    <button type="button" class="btn btn-dark scroll-top extra-tooltip" title="Voltar para o topo" role="button" data-placement="left">
+      <span class="fa fa-chevron-up"></span>
+    </button>
 
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/holderjs/holder.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
