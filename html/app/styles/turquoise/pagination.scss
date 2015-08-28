@@ -1,0 +1,18 @@
+/**
+ * Pagination Styles
+ */
+.page-counter {
+  margin: 20px 0;
+  padding: 6px 12px;
+}
+
+.panel {
+  .page-counter {
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .pagination {
+    margin: 0;
+  }
+}
