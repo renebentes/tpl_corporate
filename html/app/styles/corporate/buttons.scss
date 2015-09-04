@@ -1,0 +1,10 @@
+/**
+ * Buttons Styles
+ */
+.btn-brand {
+  @include button-variant($btn-brand-color, $btn-brand-bg, $btn-brand-border);
+}
+
+.btn-dark {
+  @include button-variant($btn-brand-dark-color, $btn-brand-dark-bg, $btn-brand-dark-border);
+}

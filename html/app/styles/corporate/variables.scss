@@ -1,0 +1,91 @@
+// Template Variables
+
+// Path Correction
+$base-path : "..";
+
+// Base Colors
+$brand-base       : #08c !default;
+$brand-dark       : #10507c !default;
+$brand-text-color : #fff !default;
+
+// Links Colors
+$brand-link-color            : $brand-text-color;
+$brand-link-hover-color      : lighten($brand-link-color, 50%);
+$brand-link-hover-decoration : none !default;
+$brand-link-active-color     : lighten($brand-link-color, 70%);
+$brand-link-disabled-color   : darken($brand-text-color, 30%);
+
+// Backgrounds Colors
+$brand-bg            : $brand-base;
+$brand-bg-alpha      : rgba(0, 136, 204, .3) !default;
+$brand-bg-image      : "#{$base-path}/images/noise.png";
+$brand-dark-bg       : $brand-dark;
+$brand-dark-bg-alpha : rgba(16, 80, 124, .3) !default;
+
+// Borders Colors
+$brand-border-color            : #07a !default;
+$brand-border-color-alpha      : rgba(0, 119, 170, .6) !default;
+$brand-dark-border-color       : darken($brand-border-color, 10%) !default;
+$brand-dark-border-color-alpha : rgba(0, 153, 204, .6) !default;
+
+// Buttons
+$btn-brand-color  : $brand-text-color !default;
+$btn-brand-bg     : $brand-bg !default;
+$btn-brand-border : $brand-border-color !default;
+
+$btn-brand-dark-color  : $brand-text-color !default;
+$btn-brand-dark-bg     : $brand-dark-bg !default;
+$btn-brand-dark-border : $brand-dark-border-color !default;
+
+// Navbar Dark - Basics
+$navbar-dark-color        : $brand-text-color;
+$navbar-dark-bg           : $brand-dark;
+$navbar-dark-bg-alpha     : $brand-dark-bg-alpha;
+$navbar-dark-border-color : $brand-dark-border-color;
+
+// Navbar Dark - Links
+$navbar-dark-link-color          : $brand-link-color;
+$navbar-dark-link-hover-color    : lighten($navbar-dark-link-color, 50%);
+$navbar-dark-link-hover-bg       : lighten($navbar-dark-bg, 15%);
+$navbar-dark-link-active-color   : lighten($navbar-dark-link-color, 70%);
+$navbar-dark-link-active-bg      : lighten($navbar-dark-bg, 10%);
+$navbar-dark-link-disabled-color : darken($navbar-dark-link-color, 30%);
+$navbar-dark-link-disabled-bg    : transparent;
+
+// Navbar Dark - Brand Label
+$navbar-dark-brand-color       : $navbar-dark-link-color;
+$navbar-dark-brand-hover-color : darken($navbar-dark-brand-color, 10%);
+$navbar-dark-brand-hover-bg    : transparent;
+
+// Navbar Dark - Toggle
+$navbar-dark-toggle-hover-bg     : $navbar-dark-link-hover-bg;
+$navbar-dark-toggle-icon-bar-bg  : #888;
+$navbar-dark-toggle-border-color : $navbar-dark-border-color;
+
+// Navbar Corporate - Basics
+$navbar-corporate-color        : $brand-text-color;
+$navbar-corporate-bg           : $brand-bg;
+$navbar-corporate-border-color : $brand-border-color;
+
+// Navbar Corporate - Links
+$navbar-corporate-link-color          : $brand-link-color;
+$navbar-corporate-link-hover-color    : $brand-text-color;
+$navbar-corporate-link-hover-bg       : darken($navbar-corporate-bg, 6%);
+$navbar-corporate-link-active-color   : $brand-text-color;
+$navbar-corporate-link-active-bg      : darken($navbar-corporate-bg, 10%);
+$navbar-corporate-link-disabled-color : darken($navbar-corporate-link-color, 30%);
+$navbar-corporate-link-disabled-bg    : transparent;
+
+// Navbar Corporate - Brand Label
+$navbar-corporate-brand-color       : $navbar-corporate-link-color;
+$navbar-corporate-brand-hover-color : darken($navbar-corporate-brand-color, 10%);
+$navbar-corporate-brand-hover-bg    : transparent;
+
+// Navbar Corporate - Toggle
+$navbar-corporate-toggle-hover-bg     : $navbar-corporate-link-hover-bg;
+$navbar-corporate-toggle-icon-bar-bg  : #888;
+$navbar-corporate-toggle-border-color : $navbar-corporate-border-color;
+
+// Navbar Sizes
+$navbar-height-small: (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2);
+$navbar-margin-bottom-small: 0px;

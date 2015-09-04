@@ -1,0 +1,37 @@
+// Navbar Sizes
+@mixin navbar-size($padding-vertical, $padding-horizontal, $font-size, $height, $margin-bottom) {
+  font-size: $font-size;
+  min-height: $height;
+  margin-bottom: $margin-bottom;
+
+  .navbar-brand {
+    padding: $padding-vertical $padding-horizontal;
+    font-size: $font-size;
+    //line-height: $line-height-computed;
+    height: $height;
+
+    @media (min-width: $grid-float-breakpoint) {
+      .navbar > .container &,
+      .navbar > .container-fluid & {
+        margin-left: -$padding-horizontal;
+      }
+    }
+  }
+
+  .navbar-nav {
+    > li > a {
+      padding: $padding-vertical $padding-horizontal;
+    }
+  }
+
+  .navbar-form {
+    margin-top: $margin-bottom;
+    margin-bottom: $margin-bottom;
+  }
+
+  .navbar-text {
+    margin: $margin-bottom;
+    padding: $padding-vertical $padding-horizontal;
+    line-height: 20px;
+  }
+}

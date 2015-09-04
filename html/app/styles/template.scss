@@ -1,0 +1,31 @@
+/*!
+ * Corporate Template: corporate v2.0.0
+ * http://github.com/renebentes/corporate
+ * Author: Rene Bentes Pinto <renebentes@yahoo.com.br>
+ * Link: http://renebentes.github.io
+ * Copyright 2014 - 2015 Rene Bentes Pinto, Inc. All rights reserved.
+ * License under the terms of the MIT; see LICENSE
+ */
+
+// Bootstrap Core Variables and Mixins
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss";
+
+// Core Variables and Mixins
+@import "corporate/variables.scss";
+@import "corporate/mixins.scss";
+
+// Core Css
+@import "corporate/scaffolding.scss";
+@import "corporate/typo.scss";
+
+// Components
+@import "corporate/buttons.scss";
+@import "corporate/carousel.scss";
+@import "corporate/dropdown.scss";
+@import "corporate/navbar.scss";
+@import "corporate/navs.scss";
+@import "corporate/modal.scss";
+@import "corporate/pagination.scss";
+@import "corporate/responsive-embed";

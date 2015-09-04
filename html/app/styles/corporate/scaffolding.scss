@@ -1,0 +1,167 @@
+/**
+ * Scaffolding
+ */
+@charset "utf-8";
+
+body {
+  position: relative;
+}
+
+/**
+ * Links
+ */
+a {
+  :hover {
+    text-decoration: none;
+  }
+}
+
+/**
+ * Logo Styles
+ */
+.logo {
+  img {
+    margin-left: 30px;
+    height: 100px;
+
+    @media (min-width: $screen-xs-min) {
+      margin-left: 0;
+    }
+  }
+}
+
+/**
+ * Horizontal Rules
+ */
+hr {
+  &.half-rule {
+    width: 250px;
+  }
+}
+
+/**
+ * Page Header Styles
+ */
+.page-header {
+  margin: 20px 0 10px 0;
+  padding-bottom: 0;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.well {
+  .page-header {
+    margin: 0 0 5px 0;
+  }
+}
+
+/**
+ * Header Styles
+ */
+.wrap-header {
+  position: relative;
+  margin-bottom: 0;
+  padding: 0;
+  background-color: $brand-bg;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    background-image: url($brand-bg-image);
+    content: '';
+  }
+
+  .header {
+    position: relative;
+    min-height: 138px;
+    padding: 5px 0;
+    color: $brand-text-color;
+    text-align: center;
+    z-index: 2;
+  }
+
+  a {
+    color: $brand-link-color;
+
+    &:hover,
+    &:focus {
+      color: $brand-link-hover-color;
+      text-decoration: $brand-link-hover-decoration;
+    }
+  }
+}
+
+/**
+ * Footer Styles
+ */
+.wrap-footer {
+  position: relative;
+  margin-top: 0;
+  padding: 0;
+  background-color: $brand-bg;
+  color: $brand-text-color;
+  text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+
+  @include box-shadow(0 3px 7px rgba(0,0,0,.2));
+
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    background-image: url($brand-bg-image);
+    content: "";
+  }
+
+  .page-header {
+    &:after {
+      bottom: 0;
+      display: block;
+      margin-top: 10px;
+      margin-bottom: -1px;
+      width: 60px;
+      height: 3px;
+      background-color: #fff;
+      content: "";
+    }
+  }
+
+  a {
+    color: $brand-link-color;
+
+    &:hover,
+    &:focus {
+      color: $brand-link-hover-color;
+      text-decoration: $brand-link-hover-decoration;
+    }
+  }
+
+  .footer-bottom {
+    overflow: hidden;
+    padding: 10px 0 0 0;
+    border-color: $brand-dark-border-color;
+    border-color: $brand-dark-border-color-alpha;
+    background-color: $brand-dark-bg;
+    background-color: $brand-bg-alpha;
+    font-size: 13px;
+
+    address,
+    ul {
+      margin-bottom: 0;
+    }
+  }
+}

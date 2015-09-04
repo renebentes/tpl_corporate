@@ -1,0 +1,21 @@
+/**
+ * Carousel Styles
+ */
+.carousel-indicators {
+  bottom: 0;
+  margin-bottom: 0;
+}
+
+.carousel-caption {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #333;
+  background: rgba(0,0,0, .3);
+
+  a {
+    color: #fff;
+  }
+}
