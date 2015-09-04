@@ -1,5 +1,5 @@
 Corporativo - tpl_corporate
-=============
+===========================
 
 Um simples tema responsivo para sites.
 
