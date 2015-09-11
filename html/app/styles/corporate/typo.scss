@@ -7,8 +7,8 @@
  */
 .scroll-top {
   position: fixed;
-  right: 0;
-  bottom: 0;
+  right: 10px;
+  bottom: 10px;
   display: none;
   cursor: pointer;
 }
@@ -102,4 +102,9 @@ p {
               transition: .2s;
     }
   }
+}
+
+.contact-us {
+  background-image: url("#{$base-path}/images/contact-map.png");
+  background-repeat: no-repeat;
 }

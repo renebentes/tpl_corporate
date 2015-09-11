@@ -78,4 +78,14 @@ if (typeof jQuery === 'undefined') {
       800
     )
   })
+
+  // Fixed navbar
+  $(window).scroll(function () {
+    if ($(this).scrollTop() !== 0) {
+      $('.navbar-fixed').addClass('navbar-fixed-top')
+    }
+    else {
+      $('.navbar-fixed').removeClass('navbar-fixed-top')
+    }
+  })
 }(jQuery);

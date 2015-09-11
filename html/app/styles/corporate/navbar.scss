@@ -1,14 +1,16 @@
 /**
  * Navbar Options
  */
-
+.navbar-fixed-top {
+  &.fade {
+    @include transition-transform(0.3s ease-out);
+}
 /**
  * Navbar Dark
  */
 .navbar-dark {
   border-color: $navbar-dark-border-color;
   background-color: $navbar-dark-bg;
-  background-color: $navbar-dark-bg-alpha;
 
   .navbar-brand {
     color: $navbar-dark-brand-color;
@@ -278,5 +280,5 @@
  * Navbar Small
  */
 .navbar-sm {
-  @include navbar-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $navbar-height-small, $navbar-margin-bottom-small);
+  @include navbar-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $navbar-small-height, $line-height-small, $navbar-small-margin-bottom);
 }

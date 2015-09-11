@@ -19,9 +19,12 @@ a {
 /**
  * Logo Styles
  */
-.logo {
+.brand-logo {
+  margin: 20px 15px 20px;
+  overflow: hidden;
+
   img {
-    margin-left: 30px;
+    width: 100px;
     height: 100px;
 
     @media (min-width: $screen-xs-min) {
@@ -88,7 +91,6 @@ hr {
     min-height: 138px;
     padding: 5px 0;
     color: $brand-text-color;
-    text-align: center;
     z-index: 2;
   }
 
@@ -108,8 +110,7 @@ hr {
  */
 .wrap-footer {
   position: relative;
-  margin-top: 0;
-  padding: 0;
+  padding-top: 10px;
   background-color: $brand-bg;
   color: $brand-text-color;
   text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
@@ -127,19 +128,6 @@ hr {
     content: "";
   }
 
-  .page-header {
-    &:after {
-      bottom: 0;
-      display: block;
-      margin-top: 10px;
-      margin-bottom: -1px;
-      width: 60px;
-      height: 3px;
-      background-color: #fff;
-      content: "";
-    }
-  }
-
   a {
     color: $brand-link-color;
 
@@ -150,18 +138,27 @@ hr {
     }
   }
 
+  .footer {
+    div[class*='col-'] {
+      &:before {
+        display: block;
+        position: absolute;
+        content: "";
+        width: 1px;
+        min-height: 100%;
+        top: 0;
+        background-color: $brand-light-border-color;
+      }
+    }
+  }
+
   .footer-bottom {
     overflow: hidden;
     padding: 10px 0 0 0;
     border-color: $brand-dark-border-color;
     border-color: $brand-dark-border-color-alpha;
     background-color: $brand-dark-bg;
-    background-color: $brand-bg-alpha;
+    background-color: $brand-dark-bg-alpha;
     font-size: 13px;
-
-    address,
-    ul {
-      margin-bottom: 0;
-    }
   }
 }

@@ -27,6 +27,7 @@ $brand-border-color            : #07a !default;
 $brand-border-color-alpha      : rgba(0, 119, 170, .6) !default;
 $brand-dark-border-color       : darken($brand-border-color, 10%) !default;
 $brand-dark-border-color-alpha : rgba(0, 153, 204, .6) !default;
+$brand-light-border-color      : #fff !default;
 
 // Buttons
 $btn-brand-color  : $brand-text-color !default;
@@ -87,5 +88,5 @@ $navbar-corporate-toggle-icon-bar-bg  : #888;
 $navbar-corporate-toggle-border-color : $navbar-corporate-border-color;
 
 // Navbar Sizes
-$navbar-height-small: (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2);
-$navbar-margin-bottom-small: 0px;
+$navbar-small-height: 30px;
+$navbar-small-margin-bottom: 0px;
