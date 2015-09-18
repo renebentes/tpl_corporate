@@ -1,12 +1,6 @@
 /**
  * Scaffolding
  */
-@charset "utf-8";
-
-body {
-  position: relative;
-}
-
 /**
  * Links
  */
@@ -39,6 +33,7 @@ a {
 hr {
   &.half-rule {
     width: 250px;
+    margin: 40px auto;
   }
 }
 
@@ -135,20 +130,6 @@ hr {
     &:focus {
       color: $brand-link-hover-color;
       text-decoration: $brand-link-hover-decoration;
-    }
-  }
-
-  .footer {
-    div[class*='col-'] {
-      &:before {
-        display: block;
-        position: absolute;
-        content: "";
-        width: 1px;
-        min-height: 100%;
-        top: 0;
-        background-color: $brand-light-border-color;
-      }
     }
   }
 

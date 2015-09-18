@@ -15,6 +15,11 @@ if (typeof jQuery === 'undefined') {
 +function ($) {
   'use strict';
 
+  // Correct body padding
+  if ($('body').find('.navbar-fixed-top')) {
+    $('body').css({'padding-top': $('.navbar-fixed-top').height()})
+  }
+
   // Call Tooltip
   $('.hasTooltip').tooltip()
 
@@ -77,15 +82,5 @@ if (typeof jQuery === 'undefined') {
       { scrollTop: 0 },
       800
     )
-  })
-
-  // Fixed navbar
-  $(window).scroll(function () {
-    if ($(this).scrollTop() !== 0) {
-      $('.navbar-fixed').addClass('navbar-fixed-top')
-    }
-    else {
-      $('.navbar-fixed').removeClass('navbar-fixed-top')
-    }
   })
 }(jQuery);

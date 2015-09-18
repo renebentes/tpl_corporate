@@ -10,9 +10,9 @@ $brand-text-color : #fff !default;
 
 // Links Colors
 $brand-link-color            : $brand-text-color;
-$brand-link-hover-color      : lighten($brand-link-color, 50%);
+$brand-link-hover-color      : darken($brand-link-color, 50%);
 $brand-link-hover-decoration : none !default;
-$brand-link-active-color     : lighten($brand-link-color, 70%);
+$brand-link-active-color     : darken($brand-link-color, 70%);
 $brand-link-disabled-color   : darken($brand-text-color, 30%);
 
 // Backgrounds Colors
@@ -34,9 +34,10 @@ $btn-brand-color  : $brand-text-color !default;
 $btn-brand-bg     : $brand-bg !default;
 $btn-brand-border : $brand-border-color !default;
 
-$btn-brand-dark-color  : $brand-text-color !default;
-$btn-brand-dark-bg     : $brand-dark-bg !default;
-$btn-brand-dark-border : $brand-dark-border-color !default;
+$btn-brand-dark-color    : $brand-text-color !default;
+$btn-brand-dark-bg       : $brand-dark-bg !default;
+$btn-brand-dark-bg-alpha : $brand-dark-bg-alpha !default;
+$btn-brand-dark-border   : $brand-dark-border-color !default;
 
 // Navbar Dark - Basics
 $navbar-dark-color        : $brand-text-color;
@@ -88,5 +89,9 @@ $navbar-corporate-toggle-icon-bar-bg  : #888;
 $navbar-corporate-toggle-border-color : $navbar-corporate-border-color;
 
 // Navbar Sizes
-$navbar-small-height: 30px;
-$navbar-small-margin-bottom: 0px;
+$navbar-small-height             : ceil(($navbar-height * .75)) !default;
+$navbar-small-line-height        : floor(($font-size-small * $line-height-small)) !default;
+$navbar-small-margin-bottom      : 0 !default;
+$navbar-small-padding-horizontal : 10px !default;
+$navbar-small-padding-vertical   : 10px !default;
+$navbar-small-input-height       : $input-height-small !default;

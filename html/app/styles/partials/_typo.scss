@@ -9,8 +9,9 @@
   position: fixed;
   right: 10px;
   bottom: 10px;
-  display: none;
-  cursor: pointer;
+  @include transition(all ease-in .2s);
+  opacity: 1;
+  @include backface-visibility(hidden);
 }
 
 /**
@@ -102,9 +103,4 @@ p {
               transition: .2s;
     }
   }
-}
-
-.contact-us {
-  background-image: url("#{$base-path}/images/contact-map.png");
-  background-repeat: no-repeat;
 }

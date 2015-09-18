@@ -1,10 +1,6 @@
 /**
  * Navbar Options
  */
-.navbar-fixed-top {
-  &.fade {
-    @include transition-transform(0.3s ease-out);
-}
 /**
  * Navbar Dark
  */
@@ -280,5 +276,5 @@
  * Navbar Small
  */
 .navbar-sm {
-  @include navbar-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $navbar-small-height, $line-height-small, $navbar-small-margin-bottom);
+  @include navbar-size($navbar-small-height, $navbar-small-margin-bottom, $font-size-small, $navbar-small-line-height, $navbar-small-padding-vertical, $navbar-small-padding-horizontal, $navbar-small-input-height);
 }

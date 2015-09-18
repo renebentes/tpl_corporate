@@ -7,25 +7,26 @@
  * License under the terms of the MIT; see LICENSE
  */
 
+@charset "utf-8";
+
 // Bootstrap Core Variables and Mixins
-$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
-@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss";
-@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_mixins";
 
 // Core Variables and Mixins
-@import "corporate/variables.scss";
-@import "corporate/mixins.scss";
+@import "partials/variables";
+@import "partials/mixins";
 
 // Core Css
-@import "corporate/scaffolding.scss";
-@import "corporate/typo.scss";
+@import "partials/scaffolding";
+@import "partials/typo";
 
 // Components
-@import "corporate/buttons.scss";
-@import "corporate/carousel.scss";
-@import "corporate/dropdown.scss";
-@import "corporate/navbar.scss";
-@import "corporate/navs.scss";
-@import "corporate/modal.scss";
-@import "corporate/pagination.scss";
-@import "corporate/responsive-embed";
+@import "partials/buttons";
+@import "partials/carousel";
+@import "partials/dropdown";
+@import "partials/navbar";
+@import "partials/navs";
+@import "partials/modal";
+@import "partials/pagination";
+@import "partials/responsive-embed";

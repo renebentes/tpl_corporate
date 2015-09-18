@@ -1,0 +1,81 @@
+// Navbar Sizes
+@mixin navbar-size($height, $margin-bottom, $font-size, $line-height, $padding-vertical, $padding-horizontal, $input-height) {
+  font-size: $font-size;
+  min-height: $height;
+
+  .container,
+  .container-fluid {
+    > .navbar-header,
+    > .navbar-collapse {
+      margin-right: -$padding-horizontal;
+      margin-left:  -$padding-horizontal;
+
+      @media (min-width: $grid-float-breakpoint) {
+        margin-right: 0;
+        margin-left:  0;
+      }
+    }
+  }
+
+  .navbar-brand {
+    padding: $padding-vertical $padding-horizontal;
+    font-size: ceil(($font-size * 1.25));
+    font-weight: bold;
+    line-height: $line-height;
+    height: $height;
+
+  }
+
+  @media (min-width: $grid-float-breakpoint) {
+    & > .container .navbar-brand,
+    & > .container-fluid .navbar-brand {
+      margin-left: -$padding-horizontal;
+    }
+  }
+
+  .navbar-toggle {
+    margin-right: $padding-horizontal;
+  }
+
+  .navbar-nav {
+    margin: $margin-bottom (-$padding-horizontal);
+
+    > li > a {
+      font-weight: 600;
+      line-height: $line-height;
+    }
+
+    // Uncollapse the nav
+    @media (min-width: $grid-float-breakpoint) {
+      > li > a {
+        padding-top: $padding-vertical;
+        padding-bottom: $padding-vertical;
+      }
+    }
+  }
+
+  .navbar-form {
+    margin-left: -$padding-horizontal;
+    margin-right: -$padding-horizontal;
+    padding: $padding-vertical $padding-horizontal;
+
+    .form-group {
+      @media (max-width: $grid-float-breakpoint-max) {
+        margin-bottom: $margin-bottom;
+      }
+    }
+
+    .form-control {
+      height: $input-height;
+      padding: $padding-vertical $padding-horizontal;
+      font-size: $font-size;
+      line-height: $line-height;
+    }
+
+    .btn {
+      font-size: $font-size;
+      padding: $padding-vertical $padding-horizontal;
+      line-height: $line-height;
+    }
+  }
+}
